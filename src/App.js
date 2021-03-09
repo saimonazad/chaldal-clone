@@ -4,7 +4,7 @@ import CarouselHome from "./components/carousel";
 import Cart from "./components/cart";
 import Sidebar from "./components/sidebar";
 import HomepageHeader from "./components/HeaderHomepage";
-import "./app.css";
+import "./App.css";
 import { Layout, Menu, Input, Row, Col, Affix, Button } from "antd";
 import {
   AppstoreOutlined,
@@ -193,15 +193,21 @@ const App = () => {
 
         <Cart active={cartActiveSate} />
       </Layout>
-      {!cartActiveSate && <Affix style={{ position: "fixed", bottom: "40%", right: 0 }}>
-        <div style={{textAlign:'center',padding: 5, backgroundColor:'#55584D'}}>
-          <ShopOutlined style={{ fontSize:30}} />
-          <h3>0 ITEMS</h3>
-        </div>
-        <div style={{backgroundColor:'#F5FCEB'}}>
-        ৳ 00
-        </div>
-      </Affix>}
+      {!cartActiveSate && (
+        <Affix style={{ position: "fixed", bottom: "40%", right: 0 }}>
+          <div
+            style={{
+              textAlign: "center",
+              padding: 5,
+              backgroundColor: "#55584D",
+            }}
+          >
+            <ShopOutlined style={{ fontSize: 30 }} />
+            <h3>0 ITEMS</h3>
+          </div>
+          <div style={{ backgroundColor: "#F5FCEB" }}>৳ 00</div>
+        </Affix>
+      )}
     </>
   );
 };
