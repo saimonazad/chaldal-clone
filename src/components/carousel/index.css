@@ -1,0 +1,17 @@
+.ant-carousel .slick-dots {
+left: unset;
+right: 2em;
+}
+
+.ant-carousel .slick-dots li button{
+    background-color: red!important;
+}
+
+.section--slider1 {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .section--slider1 img {
+      width: 100%;
+  }

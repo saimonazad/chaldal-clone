@@ -1,0 +1,21 @@
+.nav {
+    background-color: #fdd670;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */    
+  z-index: 1;
+}
+.navItem {
+    padding: 0px 10px;
+}
+.search {
+    flex: 1
+}
+
+.logo {
+    width:120px;
+}
